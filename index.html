@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Class Assignment</title>
+</head>
+
+<body>
+  <header>
+    <center>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Lectures</a>
+        <a href="">Assignments</a>
+        <a href="">Final Project</a>
+        <a href="">Labs</a>
+        <a href="">Docs</a>
+      </nav>
+      <h1>Assignment 2: Static Web: HTML/CSS</h1>
+      <p>Due Sunday, January 9 11:59pm PST</p>
+    </center>
+  </header>
+
+
+  <main>
+    <h1>Setup</h1>
+    <p>Accept the Github Classroom <span style="color: rgb(192, 128, 9);">assignment</span> and clone this repo that
+      contains stencil code for Assignment 2</p>
+    <h1>Introduction</h1>
+    <p>This is a multi-part assignment with the objective of making you comfortable working with HTML and CSS. By the
+      end of this assignment, you was have styled some rectangular blocks and created a simple version of Twitter's home
+      page.</p>
+    <p>if this assignment seem overwhelming to you, please come see a TA at TA hours to talk through some strategies for
+      tacking it .We expect this assignment to be a time-consuming assignment we cover a lot of fundamental techniques
+      but with a good strategy it can be finished in a reasonable amount of time</p>
+    <p>Note: Only CSS and HTML wil be used for the assignment. If you want to use JavaScript or libraries (such as
+      jQuery) then feel free to, but we will be grading corectness on your CSS and HTML: if you can, Start Early!</p>
+    <p>If you can, <strong>Start Early!</strong></p>
+    <h1>Part One</h1>
+    <h2>Specification</h2>
+    <p>Now that you understand some basic of HTML and CSS, let's take a look at how to align HTML elements,There are
+      multiple ways to align HTML elements, but in this part, we recommend using flexboxes as they are widely used in
+      modem web develpment,(for example BootstrapV4 is built on top of flexboxes)</p>
+    <p>Refer to this great webpage on how to use flexboxes: <span style="color: rgb(192, 128, 9);">CSS Flexbox
+        Guide</span> .</p>
+    <p>Also feel free to use online resources such as Stack Overflow, MDN, V3 and Google for reference.</p>
+    <dl>
+      <p>When you open the provided HTML file <span style="color: rgb(240, 73, 101);">part1/ index .html</span> it
+        should
+        look like this </p>
+    </dl>
+    <dd>
+      <h3>Assignment 1</h3>
+      <h3>Provided Examples</h3>
+      <h3>Row 1</h3>
+      <div class="row1">
+        <div id="r1col1"></div>
+        <div id="r1col2"></div>
+      </div>
+      <h3>Row 2</h3>
+
+      <div class="row2">
+        <div id="r2col1"></div>
+        <div id="r2col2"></div>
+      </div>
+      <h3>Student TODOs</h3>
+      <h3>Row 3</h3>
+
+      <div class="green-row">
+        <div id="col1"></div>
+      </div>
+      <h3>Row 4</h3>
+
+      <div class="green-row">
+        <div id="col1"></div>
+      </div>
+      <h3>Row 5</h3>
+
+      <div class="green-row">
+        <div id="col1"></div>
+      </div>
+      <h3>Row 6</h3>
+
+      <div class="green-row">
+        <div id="col1"></div>
+      </div>
+      <h3>Row 7</h3>
+
+      <div class="green-row">
+        <div id="col1"></div>
+      </div>
+      <h3>Row 8</h3>
+
+      <div class="green-row">
+        <div id="col1"></div>
+      </div>
+      <h3>Row 9</h3>
+      <div class="green-row">
+        <div id="col1"></div>
+      </div>
+    </dd>
+    <hr>
+    <dl>
+      <p>As you can see there are 9 rectangles. The styling and makeup of the first two rectangles are already built for
+        you. Your task to apply stylings and add div elements inside of the next 7 grean rectangular blocks to create a
+        webpage that looks like this</p>
+    </dl>
+    <dd>
+      <h3>Assignment 1</h3>
+      <h3>Provided Examples</h3>
+      <h3>Row 1</h3>
+
+      <div class="row1">
+        <div id="r1col1"></div>
+        <div id="r1col2"></div>
+      </div>
+      <h3>Row 2</h3>
+
+      <div class="row2">
+        <div id="r2col1"></div>
+        <div id="r2col2"></div>
+      </div>
+      <h3>Student TODOs</h3>
+      <h3>Row 3</h3>
+
+      <div class="row3">
+        <div id="r3col1"></div>
+        <div id="r3col2"></div>
+        <div id="r3col3"></div>
+      </div>
+      <h3>Row 4</h3>
+
+      <div class="row4">
+        <div id="r4col1"></div>
+        <div id="r4col2"></div>
+      </div>
+      <h3>Row 5</h3>
+
+      <div class="row5">
+        <div id="inner-small-box"></div>
+      </div>
+      <h3>Row 6</h3>
+
+      <div class="row6">
+        <div id="r6col1"></div>
+        <div id="r6col2"></div>
+        <div id="r6col3"></div>
+      </div>
+      <h3>Row 7</h3>
+
+      <div class="row7">
+        <div id="r7col1"></div>
+        <div id="r7col2">
+          <div id="inner-thin-line"></div>
+        </div>
+
+      </div>
+      <h3>Row 8</h3>
+
+      <div class="row8">
+        <div class="r8-yellow"></div>
+        <div class="r8-green"></div>
+        <div class="r8-yellow"></div>
+        <div class="r8-green"></div>
+        <div class="r8-yellow"></div>
+        <div class="r8-green"></div>
+        <div class="r8-yellow"></div>
+        <div class="r8-green"></div>
+        <div class="r8-yellow"></div>
+      </div>
+      <h3>Row 9</h3>
+      <div class="row9">
+        <div class="r9-yellow"></div>
+        <div class="r9-green"></div>
+        <div class="r9-yellow"></div>
+        <div class="r9-green"></div>
+        <div class="r9-yellow"></div>
+        <div class="r9-green"></div>
+        <div class="r9-yellow"></div>
+        <div class="r9-green"></div>
+        <div class="r9-yellow"></div>
+      </div>
+    </dd>
+
+
+    <dl>
+      <p>Note that these rectangular blocks should be responsive. Here is what they look like when the window is
+        thinner:
+      </p>
+    </dl>
+    <dd>
+      <h3>Assignment 1</h3>
+      <h3>Provided Examples</h3>
+      <h3>Row 1</h3>
+
+      <div class="half-row1">
+        <div id="half-r1col1"></div>
+        <div id="half-r1col2"></div>
+      </div>
+      <h3>Row 2</h3>
+
+      <div class="half-row2">
+        <div id="half-r2col1"></div>
+        <div id="half-r2col2"></div>
+      </div>
+      <h3>Student TODOs</h3>
+      <h3>Row 3</h3>
+
+      <div class="half-row3">
+        <div id="half-r3col1"></div>
+        <div id="half-r3col2"></div>
+        <div id="half-r3col3"></div>
+      </div>
+      <h3>Row 4</h3>
+
+      <div class="half-row4">
+        <div id="half-r4col1"></div>
+        <div id="half-r4col2"></div>
+      </div>
+      <h3>Row 5</h3>
+
+      <div class="half-row5">
+        <div id="half-inner-small-box"></div>
+      </div>
+      <h3>Row 6</h3>
+
+      <div class="half-row6">
+        <div id="half-r6col1"></div>
+        <div id="half-r6col2"></div>
+        <div id="half-r6col3"></div>
+      </div>
+      <h3>Row 7</h3>
+
+      <div class="half-row7">
+        <div id="half-r7col1"></div>
+        <div id="half-r7col2">
+          <div id="half-inner-thin-line"></div>
+        </div>
+
+      </div>
+      <h3>Row 8</h3>
+
+      <div class="half-row8">
+        <div class="half-r8-yellow"></div>
+        <div class="half-r8-green"></div>
+        <div class="half-r8-yellow"></div>
+        <div class="half-r8-green"></div>
+        <div class="half-r8-yellow"></div>
+        <div class="half-r8-green"></div>
+        <div class="half-r8-yellow"></div>
+        <div class="half-r8-green"></div>
+        <div class="half-r8-yellow"></div>
+      </div>
+      <h3>Row 9</h3>
+      <div class="half-row9">
+        <div class="half-r9-yellow"></div>
+        <div class="half-r9-green"></div>
+        <div class="half-r9-yellow"></div>
+        <div class="half-r9-green"></div>
+        <div class="half-r9-yellow"></div>
+        <div class="half-r9-green"></div>
+        <div class="half-r9-yellow"></div>
+        <div class="half-r9-green"></div>
+        <div class="half-r9-yellow"></div>
+      </div>
+    </dd>
+
+
+    <dl>
+      <p>We will describe how each row will behave dynamically and provide some hints for a possible approach.
+      </p>
+    </dl>
+    <dd>
+      <ol start="3">
+        <li>
+          For the third row, the red and blue end rectangles should remain the same width, and the green space should
+          shrink. <br> <br>
+          Possible Approach: Have a div with a red background and a div with a blue background, both with fixed width.
+          Use an appropriate value for <span style="color: rgb(240, 73, 101);">Justify Content</span>. 
+        </li> <br>
+        <li>
+          For the fourth row, the blue end rectangle should remain the same width, and the red rectangle should shrink.
+          <br> <br>
+          Possible Approach: Have a div with a red background and a div with a blue background. Have a fixed width on
+          the blue div. Use <span style="color: rgb(240, 73, 101);">Flex Grow</span>.
+        </li> <br>
+        <li>
+          For the fifth row, the red square should remain the same size, but always remain in the center of the green
+          rectangle. <br> <br>
+          Hint: Think about how to keep a div fixed size and how to align something in the absolute center of the parent
+          element.
+        </li> <br>
+        <li>
+          For the sixth row, the blue rectangle should remain the same size, while the red rectangles should shrink. The
+          blue rectangle should remain in the center of the row.<br> <br>
+          Hint: Use two red divs.
+        </li> <br>
+        <li>
+          For the seventh row, the red rectangle should remain the same width.<br> <br>
+          Hint: Nest divs and use <span style="color: rgb(240, 73, 101);">background-color: transparent</span>
+        </li> <br>
+        <li>
+          For the eighth row, the orange rectangles should remain the same size while the green space between them
+          shrinks.<br>
+        </li> <br>
+        <li>
+          For the ninth row, the green space between the orange rectangles should remain the same width while the orange
+          rectangles narrow.<br> <br>
+        </li> <br>
+      </ol>
+    </dd>
+    <p>The examples we provided with the first two rectangular blocks use flexboxes. You are not required to use flexboxes for the next 7 rows, but we recommend it as it will also be useful in part 2 of this assignment.</p>
+    <p>You should only have to use the <span style="color: rgb(240, 73, 101);">div</span> html element to complete this assignment. Also, <b>none of the divs you create inside of the provided wrapper divs should have</b> <span style="color: rgb(240, 73, 101);">background-color: green;</span> But it is valid to specify non-green background colors for any divs, including the wrapper.</p>
+    <p>Try to style the boxes as closely to the solution image as possible don't worry about getting exact dimensions or rgb values. We care about what structure, CSS styles you used, and the dynamic behavior of the page. However just for reference,</p>
+    <ul>
+      <li>The color of the boxes we used are <span style="color: rgb(240, 73, 101);">background-color:</span> <span style="background-color: red;">red</span>, <span style="background-color: blue;">blue</span>, and <span style="background-color: orange;">orange</span>
+        </li>
+        <li>Some width/height values we used are 20px, 40px, 80px</li>
+    </ul>
+    <p>You are not required to use Bootstrap in this part. You can use if you want, but we actually recommend writing plain CSS. Just for this part, inline CSS is acceptable, but you should generally avoid using inline CSS in the future.</p>
+    <h1>General Notes</h1>
+    <p>As a reminder, it's a good idea to run your HTML and CSS syntax through validators. You should also consider using an accessibility checker such as WAVE.</p>
+    <h1>Troubleshooting</h1>
+    <p>There are hundreds of HTML and CSS tags, properties, and values, and we do not expect students to learn each one by heart. However, this assignment and the first lab are intended for you to intuitively understand the languages, and to be proficient at knowing how to tackle a design by the end of the semester.</p> 
+    <p>If you're having problems, there are many guides on HTML and CSS online (CSSTricks and MDN are your friends), as well as on our resources page.</p> 
+    <p>As always, if you are stuck on a particular part, you can always talk to the friendly TAS or ask questions on course piazza (check your email for a signup link).</p>
+    <p> <strong>As a general rule of thumb, do not expect TAS to be able to solve every web problem you have. Even the most adept web developer can struggle a lot with specific CSS rules to use.</strong> </p>
+  </main>
+  <footer>
+    <br>
+    <div class="footer">
+      <h2>&copy; 2022 | Zeeshan Elahi</h2>
+      <a href="https://google.com">www.zeeshanelahi.net</a>
+    </div>
+  </footer>
+</body>
+
+</html>
